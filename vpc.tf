@@ -4,7 +4,7 @@ resource "alicloud_resource_manager_resource_group" "demo" {
 }
 
 module "vpc" {
-  source  = "git::/https://github.com/imeks100/aliyun-iac-tpl//vpc-tpl"
+  source  = "git::https://github.com/imeks100/aliyun-iac-tpl//vpc-tpl"
 
   create            = true
   vpc_name          = "my-env-vpc"
